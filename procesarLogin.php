@@ -26,7 +26,7 @@ if (mysqli_num_rows($result) > 0) {
     // output data of each row
     while($row = mysqli_fetch_assoc($result)) {
         
-        echo "<script>alert('vixo qlo. Bienvenido: ".$row["nombre"]."');</script>";
+        echo "<script>alert('Bienvenido: ".$row["nombre"]."');</script>";
     	echo "<script>window.location = 'index2.html';</script>";
     }
 } else {
