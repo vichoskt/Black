@@ -7,7 +7,7 @@ $server = "localhost";
 $user = "root";
 $pass = "";
 $bd = "BLACK";
-
+ session_start();
 
 // Create connection
 $conn = mysqli_connect($server, $user, $pass, $bd);
@@ -29,6 +29,7 @@ if (mysqli_num_rows($result) > 0) {
         echo "<script>alert('Bienvenido: ".$row["nombre"]."');</script>";
     	echo "<script>window.location = 'index2.html';</script>";
     }
+     $_SESSION["nombrex"] = $row["nombre"];
 } else {
     echo "<script>alert('Usuario inexistente');</script>";
     echo "<script>window.location = 'Login.html';</script>";
