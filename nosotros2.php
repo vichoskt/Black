@@ -27,7 +27,7 @@
             <?php
 
             echo "<ul id='marginsito'>";
-             echo  "<li><a href='#'>".$nomb."</a></li>";
+             echo  "<li><a href='perfil.php'>".$nomb."</a></li>";
             echo "</ul>";
      ?>
             
@@ -42,9 +42,9 @@
             <div id="menu">
                 <ul>
                     <li><a href="sesion_ind2.php" >Inicio</a></li>
-                    <li><a href="nosotros.html" class="activo">Nosotros</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="sesion_nos2.php" class="activo">Nosotros</a></li>
+                    <li><a href="sesion_gale2.php">Galeria</a></li>
+                    <li><a href="sesion_con2.php">Contacto</a></li>
                 </ul>
             </div>
 		</div>

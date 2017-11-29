@@ -7,45 +7,49 @@
     <link rel="stylesheet" href="css/estilo.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <title>Document</title>
-    <script>
-    function errorS(){
-        alert("La sesion ah caducado");
-        window.location = "index.html"
 
-    }
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider();
+    });
     </script>
 
 </head>
 <body>
-
-       <?php
+    <?php
     session_start();
     $nomb = $_SESSION["nombrex"]
 
     ?>
 
-
     <div class="columna1">
         <div class="barra_arriba">
             <p>Teléfono: +56982806956 | E-Mail: contactoBlack@black.cl</p>
             <ul>
-                <li class="ultimo"><a href="#">Cotizar</a></li>
+                <li class="ultimo"><a href="#">Carrito</a></li>            
             </ul>
-          
             <ul id="marginsito2">
                 <li><a href="cerrar_session.php">Cerrar session</a></li>
             </ul>
-             <?php
+            <?php
 
-            echo "<ul id='marginsito'>";
-             echo  "<li><a href='perfil.php'>".$nomb."</a></li>";
-            echo "</ul>";
-     ?>
+                echo "<ul id='marginsito'>";
+                echo  "<li><a href='perfil.php'>".$nomb."</a></li>";
+                echo "</ul>";
 
+            ?>
+            
         </div>
     </div>
     <div class="columna2">
         <div id="cabezera">
+
+
+
             <div id="logo">
                 <h1>B L A C K</h1>
                 <p>Diseños Juveniles</p>
@@ -53,60 +57,51 @@
 
             <div id="menu">
                     <ul>
-                          <li><a href="sesion_ind2.php" class="activo">Inicio</a></li>
+                          <li><a href="sesion_ind2.php">Inicio</a></li>
                           <li><a href="sesion_nos2.php">Nosotros</a></li>
-                          <li><a href="sesion_gale2.php">Galeria</a></li>
+                          <li><a href="sesion_gale2.php" class="activo">Galeria</a></li>
                           <li><a href="sesion_con2.php">Contacto</a></li>
-                        </ul>
-                      </div>
+                    </ul>
+            </div>
 
         </div>
 
     </div>
-    <div class="columna3">
-        <ul>
-            <li><div id="img1" class="img_portada circle"></div>
-                <a href="" class="enlace">Floreado Black</a>
-            </li>
-            <li id="white"><div id="img2" class="img_portada"></div>
-                <a href="" class="enlace">Floreado White</a>
-            </li>
-            <li id="primaveral"><div id="img3" class="img_portada"></div>
-                <a href="" class="enlace">Floreado Primaveral</a>
-            </li>
-            <li id="bluex"><div id="img4" class="img_portada"></div>
-                <a href="" class="enlace">Floreado Blue</a>
-            </li>
-        </ul>
-    </div>
-    <div class="columna4">
-            <hr>
-                
-        <div id="contenedor_abajo_iz">
-            <h2>Bienvenidos a Black Ropa</h2>
-            <hr>
-            <strong>Black ropa</strong>
-            <div id="img_logo"></div>
-            <p class="justificado">Diseños juveniles que estan marcando tendencia, black busca que sus compradores puedan sentirse mas seguros con una nueva e inovadora tenida primaveral. Se busca seguir con nuevos diseños</p>
-            <a href="#">Leer mas...</a>
-            <p class="justificado">La gente busca diseños innvoadores, algo nuevo en sus vidas y Black ha estado consiguiendo mucho con sus estilos originales </p>
-            <a href="#">Leer mas...</a>
-            <p class="justificado">La nueva moda se esta haciendo presente, por lo cual se busca seguir con diseños exclusivos para jovenes que buscan algo distinto con un toque de frescura </p>
-            <a href="#">Leer mas...</a>
-            <p class="justificado">La gente esta dejando de lado sus antiguas prendas para empezar a cambiar el closet, Black esta dando muchos caminos a gente indecisa que no sabe que adquirir esta temporada</p>
-        </div>
+	<div class="contenedor_galeria">
+		    <div class="columna3">
+        	<div class="slider">
+                <ul>
+                <li><div id="b1" class="img_slider esconder"></div></li>
+                </ul>
+                <ul>
+                <li><div id="b2" class="img_slider"></div></li>
+                </ul>
+                <ul>
+                <li><div id="b3" class="img_slider"></div></li>
+                </ul>
+                <ul>
+                <li><div id="b4" class="img_slider"></div></li>
+            </ul>
+            <ul>
+                <li><div id="b5" class="img_slider"></div></li>
+            </ul> 
+            <ul>
+                <li><div id="b6" class="img_slider"></div></li>
+            </ul>
+            <ul>
+                <li><div id="b7" class="img_slider"></div></li>
+            </ul>    
+            <ul>
+                <li><div id="b8" class="img_slider"></div></li>
+            </ul>
+            <ul>
+                <li><div id="b9" class="img_slider"></div></li>
+            </ul>
 
-        <div class="contenedor_abajo_de">
-            <h2>Entrevistas Black</h2>
-            <hr>
-            <div id="img_referencia"></div>
-            <strong>Referencias</strong>
-            <p class="justificado">Aqui algunas opniones de nuestros compradores de poleras Black, te invitamos a que conozcas las distintas opiniones y puntuaciones de gente que ha comprado nuestros diseños </p>
-            <a href="#">Leer mas...</a>
-            <hr>
-        </div>
-
+            </div>
     </div>
+
+	</div>
     <div class="columna5">
         <div id="contenedor_abajo_abajo">
             <div id="leftbox">
@@ -164,6 +159,5 @@
         </div>
 
     </div>
-
 </body>
 </html>

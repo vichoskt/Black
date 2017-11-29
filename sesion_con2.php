@@ -9,7 +9,7 @@
 <?php
 	session_start();
 	if(isset($_SESSION["nombrex"])){
-		echo "<script>window.location = 'nosotros2.php'</script>";
+		echo "<script>window.location = 'contacto2.php'</script>";
 	}
 	else{
 		echo "<script>errorS()</script>";

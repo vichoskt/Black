@@ -17,7 +17,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$query = "select nombre_us FROM usuario WHERE rut='".$rut."' and password='".$password."'";
+$query = "select nombre_us, apellido, rut, password FROM usuario WHERE rut='".$rut."' and password='".$password."'";
 
 $result = mysqli_query($conn, $query);
 
@@ -29,6 +29,10 @@ if (mysqli_num_rows($result) > 0) {
         echo "<script>alert('Bienvenido: ".$row["nombre_us"]."');</script>";
     	echo "<script>window.location = 'index2.php';</script>";
     	$_SESSION["nombrex"] = $row["nombre_us"];
+    	$_SESSION["apellidox"] = $row["apellido"];
+    	$_SESSION["rutx"] = $row["rut"];
+    	$_SESSION["passx"] = $row["password"];
+        
     }
     
 } else {

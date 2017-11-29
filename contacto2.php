@@ -7,18 +7,9 @@
     <link rel="stylesheet" href="css/estilo.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <title>Document</title>
-    <script>
-    function errorS(){
-        alert("La sesion ah caducado");
-        window.location = "index.html"
-
-    }
-    </script>
-
 </head>
 <body>
-
-       <?php
+    <?php
     session_start();
     $nomb = $_SESSION["nombrex"]
 
@@ -53,59 +44,62 @@
 
             <div id="menu">
                     <ul>
-                          <li><a href="sesion_ind2.php" class="activo">Inicio</a></li>
+                          <li><a href="sesion_ind2.php">Inicio</a></li>
                           <li><a href="sesion_nos2.php">Nosotros</a></li>
                           <li><a href="sesion_gale2.php">Galeria</a></li>
-                          <li><a href="sesion_con2.php">Contacto</a></li>
+                          <li><a href="sesion_con2.php" class="activo">Contacto</a></li>
                         </ul>
                       </div>
 
         </div>
 
     </div>
-    <div class="columna3">
-        <ul>
-            <li><div id="img1" class="img_portada circle"></div>
-                <a href="" class="enlace">Floreado Black</a>
-            </li>
-            <li id="white"><div id="img2" class="img_portada"></div>
-                <a href="" class="enlace">Floreado White</a>
-            </li>
-            <li id="primaveral"><div id="img3" class="img_portada"></div>
-                <a href="" class="enlace">Floreado Primaveral</a>
-            </li>
-            <li id="bluex"><div id="img4" class="img_portada"></div>
-                <a href="" class="enlace">Floreado Blue</a>
-            </li>
-        </ul>
-    </div>
-    <div class="columna4">
-            <hr>
-                
-        <div id="contenedor_abajo_iz">
-            <h2>Bienvenidos a Black Ropa</h2>
-            <hr>
-            <strong>Black ropa</strong>
-            <div id="img_logo"></div>
-            <p class="justificado">Diseños juveniles que estan marcando tendencia, black busca que sus compradores puedan sentirse mas seguros con una nueva e inovadora tenida primaveral. Se busca seguir con nuevos diseños</p>
-            <a href="#">Leer mas...</a>
-            <p class="justificado">La gente busca diseños innvoadores, algo nuevo en sus vidas y Black ha estado consiguiendo mucho con sus estilos originales </p>
-            <a href="#">Leer mas...</a>
-            <p class="justificado">La nueva moda se esta haciendo presente, por lo cual se busca seguir con diseños exclusivos para jovenes que buscan algo distinto con un toque de frescura </p>
-            <a href="#">Leer mas...</a>
-            <p class="justificado">La gente esta dejando de lado sus antiguas prendas para empezar a cambiar el closet, Black esta dando muchos caminos a gente indecisa que no sabe que adquirir esta temporada</p>
+    <div class="contenedor_contacto">
+        <form action="#" method="POST">
+            <table>
+                <tr>
+                    <td><input type="text" value placeholder="*Primer Nombre" maxlength="50" class="texto_contacto"></td>
+                    <td><input type="text" value placeholder="*Segundo Nombre" maxlength="50" class="texto_contacto"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" value placeholder="*Correo electrónico" maxlength="70" class="texto_contacto"></td>
+                    <td><select name="paises" id="pais" class="texto_contacto">
+                            <option selected value="1">Chile</option>
+                            <option value="2">Argentina</option>
+                            <option value="3">Perú</option>
+                            <option value="4">Brasil</option>
+                            <option value="5">Bolivia</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" value placeholder="*Ciudad" maxlength="50" class="texto_contacto"></td>
+                    <td><input type="text" value placeholder="*Numero de telefono" maxlength="20" class="texto_contacto"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" value placeholder="*Mensaje" maxlength="500" class="texto_mensaje"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Enviar" id="boton_enviar"></td>
+                </tr>
+
+            </table>
+        </form>
+
+        <div id="ubicacion" class="float_right">
+            <p>Celular: +56982806956
+               Telefono fijo: 22 7379445
+           </p>
         </div>
 
-        <div class="contenedor_abajo_de">
-            <h2>Entrevistas Black</h2>
-            <hr>
-            <div id="img_referencia"></div>
-            <strong>Referencias</strong>
-            <p class="justificado">Aqui algunas opniones de nuestros compradores de poleras Black, te invitamos a que conozcas las distintas opiniones y puntuaciones de gente que ha comprado nuestros diseños </p>
-            <a href="#">Leer mas...</a>
-            <hr>
-        </div>
-
+            <h2>Otros medios de contacto</h2>
+            <div class="contenedor_iconos">
+                <a href="https://www.facebook.com/black.ropa/"><div id="icono_fb" class="iconos"></div></a>
+                <div id="icono_insta" class="iconos"></div>
+                <div id="icono_twitter" class="iconos"></div>
+                <a href="https://www.youtube.com/user/tamiiistar"><div id="icono_youtube" class="iconos"></div></a>
+            </div>
     </div>
     <div class="columna5">
         <div id="contenedor_abajo_abajo">
@@ -164,6 +158,5 @@
         </div>
 
     </div>
-
 </body>
 </html>

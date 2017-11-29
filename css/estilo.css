@@ -1166,3 +1166,25 @@ h1 {
     font-size: 16px;
     font-style: italic;
 }
+
+
+.columnaP {
+   font-size:12px;
+   height:500px;
+   width:960px;
+   margin: auto;
+}
+
+#perfilsito{
+    border: 2px solid skyblue;
+    border-style: groove;
+    height: 400px;
+    width: 700px;
+    margin: auto;
+    margin-top: 20px;
+    padding-left: 20px;
+    box-shadow: 10px 10px 5px #888888;
+    border-radius: 10px 10px 10px 10px;
+
+}
+
