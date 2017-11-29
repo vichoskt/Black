@@ -25,7 +25,7 @@ $result = mysqli_query($conn, $query);
 
 if (mysqli_query($conn, $query)) {
         
-        echo "<script>alert('Modificado con exito: ".$row["nombre_us"]."');</script>";
+        echo "<script>alert('Modificado con exito');</script>";
     	echo "<script>window.location = 'perfil.php';</script>";
     	$_SESSION["passx"] = $row["password"];
     
