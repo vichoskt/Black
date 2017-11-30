@@ -23,7 +23,16 @@ body {
     color: white;
     text-align: left;
 }
-
+.peque2{
+    width: auto;
+    height: 100px;
+    margin-top: 20px;
+}
+.peque{
+    width: 90px;
+    height: 80px;
+    float: left;
+}
 .columna5, .columna6 {
     margin-left: -8px !important;
     padding-right: 16px !important;
@@ -121,6 +130,12 @@ h1 {
 .columna3 {
    font-size:12px;
    height:404px;
+   width:960px;
+   margin: auto;
+}
+.columna33 {
+   font-size:12px;
+   height:804px;
    width:960px;
    margin: auto;
 }

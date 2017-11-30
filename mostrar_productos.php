@@ -7,29 +7,75 @@
     <link rel="stylesheet" href="css/estilo.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <title>Document</title>
+
 </head>
 <body>
-     <div class="columna1">
+<?php
+
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "black";
+   //creo dos array
+    $dale=array();
+    $dule=array();
+      
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    } 
+
+    $sql = "SELECT * FROM producto";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+
+        // output data of each row
+        while($row = $result->fetch_assoc()) {
+            //los seteo 
+            $dale[] = $row["nombre_pro"];
+            $dule[] = $row["precio"];
+
+        }
+
+    } 
+    else {
+        echo "0 results";
+    }
+    $conn->close();
+
+?>
+
+
+     
+
+
+   <div class="columna1">
         <div class="barra_arriba">
             <p>Teléfono: +56982806956 | E-Mail: contactoBlack@black.cl</p>
             <ul>
                 <li class="ultimo"><a href="#">Cotizar</a></li>
             </ul>
-            <ul id="marginsito" >
+            <ul id="marginsito">
                 <li><a href="registro.html">Registrate</a></li>
             </ul>
-            <ul id="marginsito2" >
+            <ul id="marginsito2">
                 <li><a href="Login.html">Iniciar Sesión</a></li>
             </ul>
         </div>
     </div>
+  
     <div class="columna2">
         <div id="cabezera">
             <div id="logo">
                 <h1>B L A C K</h1>
                 <p>Diseños Juveniles</p>
             </div>
-            <div id="menu">
+
+                        <div id="menu">
                 <ul>
                     <li><a href="index.html" >Inicio</a></li>
                     <li><a href="nosotros.html" class="activo">Nosotros</a></li>
@@ -37,26 +83,21 @@
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
-		</div>
-    </div>
-    <div class="contenedor_max_nosotros">
-        <div class="contenedor_nosotros">
-            <div class="foto_nosotros" id="cambio_foto"></div>
-            <div class="contenedor_der_nosotros">
-                <h2>Quienes somos</h2>
-                <p class="estiloP2">Black una marca de poleras independiente, que esta enfocada principalmente el publico juvenil, haciendo diseños de interes y tendencia popular para jóvenes. A nosotros como marca nos gusta dar la mejor atencióna nuestros clientes por ello ya contamos con mas de 200 compradores fieles a nuestra marca, y se espera que esta cifra siga subiendo en el futuro para empezar a extendernos nacionalmente. Hace ya 2 años que entramos al mercado de las poleras para seguir proximamente con polerones.</p>
-                </div>
-                <p class="estiloP1"></p>
-                <p class="estiloP2">Black esta inspirado en tendencias al estilo Skater, dado que a estos deportistas tienen una temática de libertad sobre su patienta esta representado en los diseños floreados, representando en grado la libertad que se puede obtener el estar arriba de una tabla. También asi los distintos deportes que provoquen una sensación de frescura y alegria ya sea como lo es el Fútbol, Surf, Snowboard, etc.</p>
-
-                <p class="estiloP3">
-                    LOCALIZACIÓN
-                </p>
-                <p class="estiloP3">La sucursal física está situada en Independencia, en la calle San luis, Pasaje 1491, casa 18</p>
-                <p class="estiloP3">El teléfono de la sucursal es el siguiente: +569 82806956</p>
 
         </div>
+
     </div>
+    <div class="columna33">
+       <ul class="peque2">
+    <?php
+
+            //Los obtengo
+           echo "<li><img src='img/b1.jpg' class='peque'> Nombre: ".$dale[0]." ........   Precio: ".$dule[0]." </li>"
+       ?>    
+
+       </ul>
+    </div>
+    
     <div class="columna5">
         <div id="contenedor_abajo_abajo">
             <div id="leftbox">
@@ -114,5 +155,6 @@
         </div>
 
     </div>
+
 </body>
 </html>
