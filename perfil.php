@@ -69,15 +69,8 @@
     echo "<h3>Pass: ".$passi."</h3>";
     
     ?>
-    <form action="perfil.php" method="post">
-    <input type="text" name="txtcorreo" placeholder="Ingrese un correo...">
-    <input type="submit" value="Actualizar">
-    </form>
+    
 
-    <?php
-    $correo = $_POST["txtcorreo"];
-    echo "<h3>".$correo."</h3>";
-    ?>
     
     <form action="ModPass.php" method="post">
     <input type="text" name="txtpass" placeholder="Modificar Password">
