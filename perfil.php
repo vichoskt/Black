@@ -70,10 +70,20 @@
     
     ?>
     
-
-    
     <form action="ModPass.php" method="post">
-    <input type="text" name="txtpass" placeholder="Modificar Password">
+    <input type="text" name="txtpass" placeholder="Modificar Password...">
+    <input type="submit" value="Actualizar">
+    </form>
+    <br>
+
+    <form action="ModName.php" method="post">
+    <input type="text" name="txtname" placeholder="Modificar Nombre...">
+    <input type="submit" value="Actualizar">
+    </form>
+    <br>
+
+    <form action="ModApe.php" method="post">
+    <input type="text" name="txtape" placeholder="Modificar Apellido...">
     <input type="submit" value="Actualizar">
     </form>
 

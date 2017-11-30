@@ -2,16 +2,17 @@
 
 session_start();
 
+
 $rut = $_SESSION["rutx"];
 
-if(empty($_POST['txtpass']))
+if(empty($_POST['txtape']))
 {
 	echo "<script>alert('Campo Vacio!');</script>";
     echo "<script>window.location = 'perfil.php';</script>";
     return false;
 }  
 else{
-	$passwor = $_POST["txtpass"];
+	$ape = $_POST["txtape"];
 }
 
 $server = "localhost";
@@ -27,7 +28,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$query = "update usuario set password='".$passwor."' where rut='".$rut."'";
+$query = "update usuario set apellido='".$ape."' where rut='".$rut."'";
 
 $result = mysqli_query($conn, $query);
 
@@ -35,7 +36,7 @@ if (mysqli_query($conn, $query)) {
 
         echo "<script>alert('Modificado con exito');</script>";
     	echo "<script>window.location = 'perfil.php';</script>";
-    	$_SESSION["passx"] = $passwor;
+    	$_SESSION["apellidox"] = $ape;
    
 
 

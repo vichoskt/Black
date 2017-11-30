@@ -20,7 +20,7 @@
         <div class="barra_arriba">
             <p>Teléfono: +56982806956 | E-Mail: contactoBlack@black.cl</p>
             <ul>
-                <li class="ultimo"><a href="#">Cotizar</a></li>
+                <li class="ultimo"><a href="Productos.php">¡Carrito!</a></li>
             </ul>
           
             <ul id="marginsito2">
@@ -96,7 +96,7 @@
             <h2>Otros medios de contacto</h2>
             <div class="contenedor_iconos">
                 <a href="https://www.facebook.com/black.ropa/"><div id="icono_fb" class="iconos"></div></a>
-                <div id="icono_insta" class="iconos"></div>
+                <a href="https://www.instagram.com/vichoskt/"> <div id="icono_insta" class="iconos"></div></a>
                 <div id="icono_twitter" class="iconos"></div>
                 <a href="https://www.youtube.com/user/tamiiistar"><div id="icono_youtube" class="iconos"></div></a>
             </div>
