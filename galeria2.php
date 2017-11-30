@@ -69,33 +69,33 @@
     </div>
 	<div class="contenedor_galeria">
 		    <div class="columna3">
-        	<div class="slider">
+       <div class="slider">
                 <ul>
-                <li><div id="b1" class="img_slider esconder"></div></li>
+                <li> <a href="sesion_verpro2.php" > <div id="b1" class="img_slider esconder"> </div> </a></li>
                 </ul>
                 <ul>
-                <li><div id="b2" class="img_slider"></div></li>
+                <li> <a href="sesion_verpro2.php" > <div id="b2" class="img_slider"> </div> </a></li>
                 </ul>
                 <ul>
-                <li><div id="b3" class="img_slider"></div></li>
+                 <li> <a href="sesion_verpro2.php" > <div id="b3" class="img_slider"> </div> </a></li>
                 </ul>
                 <ul>
-                <li><div id="b4" class="img_slider"></div></li>
+             <li> <a href="sesion_verpro2.php" > <div id="b4" class="img_slider"> </div> </a></li>
             </ul>
             <ul>
-                <li><div id="b5" class="img_slider"></div></li>
+               <li> <a href="sesion_verpro2.php" > <div id="b5" class="img_slider"> </div> </a></li>
             </ul> 
             <ul>
-                <li><div id="b6" class="img_slider"></div></li>
+                <li> <a href="sesion_verpro2.php" > <div id="b6" class="img_slider"> </div> </a></li>
             </ul>
             <ul>
-                <li><div id="b7" class="img_slider"></div></li>
+                 <li> <a href="sesion_verpro2.php" > <div id="b7" class="img_slider"> </div> </a></li>
             </ul>    
             <ul>
-                <li><div id="b8" class="img_slider"></div></li>
+               <li> <a href="sesion_verpro2.php" > <div id="b8" class="img_slider"> </div> </a></li>
             </ul>
             <ul>
-                <li><div id="b9" class="img_slider"></div></li>
+                <li> <a href="sesion_verpro2.php" > <div id="b9" class="img_slider"> </div> </a></li>
             </ul>
 
             </div>

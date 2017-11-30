@@ -66,16 +66,16 @@
     <div class="columna3">
         <ul>
             <li><div id="img1" class="img_portada circle"></div>
-                <a href="" class="enlace">Floreado Black</a>
+                <a href="sesion_verpro2.php" class="enlace">Floreado Black</a>
             </li>
             <li id="white"><div id="img2" class="img_portada"></div>
-                <a href="" class="enlace">Floreado White</a>
+                <a href="sesion_verpro2.php" class="enlace">Floreado White</a>
             </li>
             <li id="primaveral"><div id="img3" class="img_portada"></div>
-                <a href="" class="enlace">Floreado Primaveral</a>
+                <a href="sesion_verpro2.php" class="enlace">Floreado Primaveral</a>
             </li>
             <li id="bluex"><div id="img4" class="img_portada"></div>
-                <a href="" class="enlace">Floreado Blue</a>
+                <a href="sesion_verpro2.php" class="enlace">Floreado Blue</a>
             </li>
         </ul>
     </div>
