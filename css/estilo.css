@@ -7,7 +7,9 @@ body {
     width: 960px;
     margin: auto;
 }
-
+.botondalex{
+   margin: auto;
+}
 .barra_arriba p {
     padding-top: 8px;
 }
@@ -24,6 +26,11 @@ body {
     background-color: #03A9F4;
     color: white;
     text-align: left;
+}
+.peque3{
+    width: auto;
+    height: 20px;
+    margin-top: 5px;
 }
 .peque2{
     width: auto;
@@ -137,7 +144,7 @@ h1 {
 }
 .columna33 {
    font-size:12px;
-   height:804px;
+   height:100%;
    width:960px;
    margin: auto;
 }

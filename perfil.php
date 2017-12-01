@@ -156,3 +156,49 @@
     </div>
 </body>
 </html>
+
+
+
+<?php
+ //Obtener datos de el carrito
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "black";
+   //creo dos array
+
+     $cant = count($dale);
+      
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+
+    for ($i=0; $i < $cant ; $i++) { 
+        # code...
+    
+    $sql = "SELECT * FROM 'producto' WHERE idproducto='".$dale[$i]."' ";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+
+        // output data of each row
+        while($row = $result->fetch_assoc()) {
+            //los seteo 
+            $dule[] = $row["nombre_pro"];
+            $dele[] = $row["precio"];
+        }
+
+    } 
+    else {
+        echo "0 results";
+    }
+}
+    $conn->close();
+
+
+?>
