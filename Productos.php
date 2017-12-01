@@ -94,7 +94,7 @@
         </div>
 
     </div>
-    <div class="columna33">
+    <div class="columnaProd">
 
 
        <ul class="peque2">
@@ -114,13 +114,13 @@
     ?>   
         <input type="Checkbox" name="cajita" value="1" class="botonciwi">
 
-        <input type="submit" value="Añadir">
+        <input type="submit" value="Añadir" class="botonsito">
 
 
         </form>
        </ul>
       <?php
-   //separacion xxdxdx
+   //separacion Polera **************************
    ?>
        <ul class="peque2">
         <form action="sesion_carr.php" method="POST">   
@@ -133,11 +133,14 @@
     ?>   
        <input type="Checkbox" name="cajita" value="2" class="botonciwi">
 
-        <input type="submit" value="Añadir">
+        <input type="submit" value="Añadir" class="botonsito">
         </form>
        </ul>
 
 
+       <?php
+    //separacion Polera **************************
+    ?>
 
        <ul class="peque2">
         <form action="sesion_carr.php" method="POST">   
@@ -148,16 +151,103 @@
            echo "<li><h3> Precio: ".$dule[2]." </li> </h3>";
 
     ?>   
-       <input type="Checkbox" name="cajita" value="2" class="botonciwi">
+       <input type="Checkbox" name="cajita" value="3" class="botonciwi">
 
-        <input type="submit" value="Añadir">
+        <input type="submit" value="Añadir" class="botonsito">
+        </form>
+       </ul>
+
+    <?php
+    //separacion Polera **************************
+    ?>
+       <ul class="peque2">
+        <form action="sesion_carr.php" method="POST">   
+    <?php
+            //Los obtengo
+           echo "<li><h3> <img src='img/b4.jpg' class='peque'> </li> </h3>";
+           echo "<li><h3>".$dale[3]."</li> </h3>";
+           echo "<li><h3> Precio: ".$dule[3]." </li> </h3>";
+
+    ?>   
+       <input type="Checkbox" name="cajita" value="4" class="botonciwi">
+
+        <input type="submit" value="Añadir" class="botonsito">
+        </form>
+       </ul>
+
+       <?php
+   //separacion Polera **************************
+   ?>
+       <ul class="peque2">
+        <form action="sesion_carr.php" method="POST">   
+    <?php
+            //Los obtengo
+           echo "<li><h3> <img src='img/b5.jpg' class='peque'> </li> </h3>";
+           echo "<li><h3>".$dale[4]."</li> </h3>";
+           echo "<li><h3> Precio: ".$dule[4]." </li> </h3>";
+
+    ?>   
+       <input type="Checkbox" name="cajita" value="5" class="botonciwi">
+
+        <input type="submit" value="Añadir" class="botonsito">
         </form>
        </ul>
 
 
+       <?php
+   //separacion Polera **************************
+   ?>
+       <ul class="peque2">
+        <form action="sesion_carr.php" method="POST">   
+    <?php
+            //Los obtengo
+           echo "<li><h3> <img src='img/b6.jpg' class='peque'> </li> </h3>";
+           echo "<li><h3>".$dale[5]."</li> </h3>";
+           echo "<li><h3> Precio: ".$dule[5]." </li> </h3>";
+
+    ?>   
+       <input type="Checkbox" name="cajita" value="6" class="botonciwi">
+
+        <input type="submit" value="Añadir" class="botonsito">
+        </form>
+       </ul>
 
 
+       <?php
+   //separacion Polera **************************
+   ?>
+       <ul class="peque2">
+        <form action="sesion_carr.php" method="POST">   
+    <?php
+            //Los obtengo
+           echo "<li><h3> <img src='img/b7.jpg' class='peque'> </li> </h3>";
+           echo "<li><h3>".$dale[6]."</li> </h3>";
+           echo "<li><h3> Precio: ".$dule[6]." </li> </h3>";
 
+    ?>   
+       <input type="Checkbox" name="cajita" value="7" class="botonciwi">
+
+        <input type="submit" value="Añadir" class="botonsito">
+        </form>
+       </ul>
+
+       <?php
+   //separacion Polera **************************
+   ?>
+       <ul class="peque2">
+        <form action="sesion_carr.php" method="POST">   
+    <?php
+            //Los obtengo
+           echo "<li><h3> <img src='img/b8.jpg' class='peque'> </li> </h3>";
+           echo "<li><h3>".$dale[7]."</li> </h3>";
+           echo "<li><h3> Precio: ".$dule[7]." </li> </h3>";
+
+    ?>   
+       <input type="Checkbox" name="cajita" value="8" class="botonciwi">
+
+        <input type="submit" value="Añadir" class="botonsito">
+        </form>
+       </ul>
        
     </div>
     

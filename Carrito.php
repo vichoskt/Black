@@ -198,9 +198,9 @@ if (mysqli_query($conn, $query)) {
     <?php
     for ($i=0; $i < $cant ; $i++) { 
          
-       echo  "<ul class='peque3'>";       
-     echo "<li class='peque3'><h4>      Producto: ".$dule[$i]." Precio:  ".$dele[$i]." </h4></li><br>";
-    echo "</ul>";
+          
+    echo "<h3>Producto: ".$dule[$i]."</h3>";
+    echo "<h3 >Precio: $".$dele[$i]." </h3>";
         
 
     }
@@ -216,9 +216,8 @@ $exter= $exter + $dele[$i];
  
  $_SESSION["valorcito"] = $exter;
 
-echo  "<ul class='peque3'>";       
-     echo "<li class='peque3'><h3>  Valor total a pagar: ".$exter."  </h3>   </li>";
-    
+    echo  "<ul class='peque3'>";       
+    echo "<li class='peque3'><h2>  Valor total a pagar: $".$exter."  </h2>   </li>";
     echo "</ul>";
 
 

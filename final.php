@@ -68,48 +68,45 @@
        
 
             <?php
-              $run = $_SESSION["rutx"];
+            $run = $_SESSION["rutx"];
             $valor = $_SESSION["valorcito"];
             $medi = $_SESSION["med"];
             $id = null;
 
             $server = "localhost";
-$user = "root";
-$pass = "";
-$bd = "BLACK";
+            $user = "root";
+            $pass = "";
+            $bd = "BLACK";
 
 
-// Create connection
-$conn = mysqli_connect($server, $user, $pass, $bd);
+            // Create connection
+            $conn = mysqli_connect($server, $user, $pass, $bd);
 
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+            // Check connection
+            if (!$conn) {
+                die("Connection failed: " . mysqli_connect_error());
+            }
 
-$query = "insert into venta values ('".$id."','".$run."','".$medi."','".$valor."')";
+            $query = "insert into venta values (".$id.",'".$run."','".$medi."','".$valor."'')";
 
-if (mysqli_query($conn, $query)) {
-echo "<h1> GRACIAS por su compra, Su Pedido llegará en 3 o 5 Días </h1>";
+            if (mysqli_query($conn, $query)) {
+            echo "<h1> GRACIAS por su compra, Su Pedido llegará en 3 o 5 Días </h1>";
 
-}
-else{
-    echo "Error: ".mysqli_error($conn);
-}
+            }
+            else{
+                echo "Error: ".mysqli_error($conn);
+            }
 
-mysqli_close($conn);
+            mysqli_close($conn);
 
-?>
-
-
-
+            ?>
 
 
 
 <?php
 
 
- $server = "localhost";
+$server = "localhost";
 $user = "root";
 $pass = "";
 $bd = "BLACK";

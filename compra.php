@@ -73,27 +73,28 @@
             $valor = $_SESSION["valorcito"];
 
 
-            echo "<h1> Rut: "  .$run." </h1> ";
+            echo "<h2> Rut: "  .$run." </h2> ";
             echo "<br>";
 
 
-              echo "<h1> Nombre: "  .$nom." </h1> ";
+            echo "<h2> Nombre: "  .$nom." </h2> ";
             echo "<br>"; 
             
 
-             echo "<h1> Apellido: "  .$app." </h1> ";
+            echo "<h2> Apellido: "  .$app." </h2> ";
             echo "<br>"; 
 
-             echo "<h1> Precio Total: "  .$valor." </h1> ";
+            echo "<h2> Precio Total: $"  .$valor." </h2> ";
             echo "<br>"; 
 
             ?>
             
             <form action="sesion_final.php" method="POST">
                 
-            Medio de pago: <select name="medio" id="mede" class="texto_contacto">
-                            <option selected value="1">Devito</option>
-                            <option value="2">Credito</option>
+            Medio de pago: <br>
+            <select name="medio" id="mede" class="texto_contacto">
+                            <option selected value="1">Débito</option>
+                            <option value="2">Crédito</option>
                            
                         </select>
                 

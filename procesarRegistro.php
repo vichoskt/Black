@@ -1,9 +1,18 @@
 <?php
 
-$rut = $_POST["txtRut"];
-$nombre = $_POST["txtNombre"];
-$apellido = $_POST["txtApellido"];
-$password = $_POST["contra"];
+
+if(empty($_POST['txtRut'] && $_POST["txtNombre"] && $_POST["txtApellido"] && $_POST["contra"]))
+{
+	echo "<script>alert('Hay campos vacios que debe completar');</script>";
+    echo "<script>window.location = 'registro.html';</script>";
+    return false;
+}  
+else{
+	$rut = $_POST["txtRut"];
+	$nombre = $_POST["txtNombre"];
+	$apellido = $_POST["txtApellido"];
+	$password = $_POST["contra"];
+}
 
 $server = "localhost";
 $user = "root";
