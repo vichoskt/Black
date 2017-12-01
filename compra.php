@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="css/estilo.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+
 </head>
 <body>
     <?php
@@ -15,28 +21,30 @@
 
     ?>
 
-
     <div class="columna1">
         <div class="barra_arriba">
             <p>Teléfono: +56982806956 | E-Mail: contactoBlack@black.cl</p>
             <ul>
-                <li class="ultimo"><a href="sesion_carr2.php">¡Carrito!</a></li>
+                <li class="ultimo"><a href="sesion_carr2.php">¡Carrito!</a></li>            
             </ul>
-          
             <ul id="marginsito2">
                 <li><a href="cerrar_session.php">Cerrar session</a></li>
             </ul>
-             <?php
+            <?php
 
-            echo "<ul id='marginsito'>";
-             echo  "<li><a href='perfil.php'>".$nomb."</a></li>";
-            echo "</ul>";
-     ?>
+                echo "<ul id='marginsito'>";
+                echo  "<li><a href='perfil.php'>".$nomb."</a></li>";
+                echo "</ul>";
 
+            ?>
+            
         </div>
     </div>
     <div class="columna2">
         <div id="cabezera">
+
+
+
             <div id="logo">
                 <h1>B L A C K</h1>
                 <p>Diseños Juveniles</p>
@@ -47,60 +55,58 @@
                           <li><a href="sesion_ind2.php">Inicio</a></li>
                           <li><a href="sesion_nos2.php">Nosotros</a></li>
                           <li><a href="sesion_gale2.php">Galeria</a></li>
-                          <li><a href="sesion_con2.php" class="activo">Contacto</a></li>
-                        </ul>
-                      </div>
-
-        </div>
-
-    </div>
-    <div class="contenedor_contacto">
-        <form action="#" method="POST">
-            <table>
-                <tr>
-                    <td><input type="text" value placeholder="*Primer Nombre" maxlength="50" class="texto_contacto"></td>
-                    <td><input type="text" value placeholder="*Segundo Nombre" maxlength="50" class="texto_contacto"></td>
-                </tr>
-                <tr>
-                    <td><input type="text" value placeholder="*Correo electrónico" maxlength="70" class="texto_contacto"></td>
-                    <td><select name="paises" id="pais" class="texto_contacto">
-                            <option selected value="1">Chile</option>
-                            <option value="2">Argentina</option>
-                            <option value="3">Perú</option>
-                            <option value="4">Brasil</option>
-                            <option value="5">Bolivia</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td><input type="text" value placeholder="*Ciudad" maxlength="50" class="texto_contacto"></td>
-                    <td><input type="text" value placeholder="*Numero de telefono" maxlength="20" class="texto_contacto"></td>
-                </tr>
-                <tr>
-                    <td><input type="text" value placeholder="*Mensaje" maxlength="500" class="texto_mensaje"></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="submit" value="Enviar" id="boton_enviar"></td>
-                </tr>
-
-            </table>
-        </form>
-
-        <div id="ubicacion" class="float_right">
-            <p>Celular: +56982806956
-               Telefono fijo: 22 7379445
-           </p>
-        </div>
-
-            <h2>Otros medios de contacto</h2>
-            <div class="contenedor_iconos">
-                <a href="https://www.facebook.com/black.ropa/"><div id="icono_fb" class="iconos"></div></a>
-                <a href="https://www.instagram.com/vichoskt/"> <div id="icono_insta" class="iconos"></div></a>
-                <div id="icono_twitter" class="iconos"></div>
-                <a href="https://www.youtube.com/user/tamiiistar"><div id="icono_youtube" class="iconos"></div></a>
+                          <li><a href="sesion_con2.php">Contacto</a></li>
+                    </ul>
             </div>
+
+        </div>
+
     </div>
+
+		    <div class="columna33">
+            
+            <?php
+
+            $run = $_SESSION["rutx"];
+            $nom = $_SESSION["nombrex"];
+            $app = $_SESSION["apellidox"];
+            $valor = $_SESSION["valorcito"];
+
+
+            echo "<h1> Rut: "  .$run." </h1> ";
+            echo "<br>";
+
+
+              echo "<h1> Nombre: "  .$nom." </h1> ";
+            echo "<br>"; 
+            
+
+             echo "<h1> Apellido: "  .$app." </h1> ";
+            echo "<br>"; 
+
+             echo "<h1> Precio Total: "  .$valor." </h1> ";
+            echo "<br>"; 
+
+            ?>
+            
+            <form action="sesion_final.php" method="POST">
+                
+            Medio de pago: <select name="medio" id="mede" class="texto_contacto">
+                            <option selected value="1">Devito</option>
+                            <option value="2">Credito</option>
+                           
+                        </select>
+                
+                <input type="submit" value="Confirmar" class="botondalex">
+            </form>
+        
+            
+
+
+
+    </div>
+
+	
     <div class="columna5">
         <div id="contenedor_abajo_abajo">
             <div id="leftbox">

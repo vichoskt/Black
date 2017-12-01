@@ -224,9 +224,9 @@ echo  "<ul class='peque3'>";
 
     ?>
     <br>
-
+<form action="sesion_comp.php">
 <input type="submit" value="Comprar" class="botondalex">
-
+</form>
 
        
     </div>
