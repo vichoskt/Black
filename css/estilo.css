@@ -27,21 +27,7 @@ body {
     color: white;
     text-align: left;
 }
-.peque3{
-    width: auto;
-    height: 20px;
-    margin-top: 5px;
-}
-.peque2{
-    width: auto;
-    height: 100px;
-    margin-top: 20px;
-}
-.peque{
-    width: 90px;
-    height: 80px;
-    float: left;
-}
+
 .columna5, .columna6 {
     margin-left: -8px !important;
     padding-right: 16px !important;
@@ -1211,5 +1197,22 @@ h1 {
     border-radius: 10px 10px 10px 10px;
     background-color: #FFF0FE;
 
+}
+
+.peque3{
+    width: auto;
+    height: 20px;
+    margin-top: 5px;
+}
+.peque2{
+    width: auto;
+    height: 100px;
+    margin-top: 20px;
+}
+.peque{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 10px;
 }
 

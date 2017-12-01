@@ -69,7 +69,7 @@
             <?php
 
             echo "<ul id='marginsito'>";
-             echo  "<li><a href='perfil.php'>".$nomb."</a></li>";
+            echo  "<li><a href='perfil.php'>".$nomb."</a></li>";
             echo "</ul>";
      ?>
             
@@ -105,12 +105,14 @@
         
 
 
-  <?php
-
+    <?php
             //Los obtengo
-           echo "<li><img src='img/b1.jpg' class='peque'> Nombre: ".$dale[0]." ........   Precio: ".$dule[0]." </li> "
-       ?>   
-       <input type="Checkbox" name="cajita" value="1" class="botonciwi">
+           echo "<li><h3> <img src='img/b1.jpg' class='peque'> </li> </h3>";
+           echo "<li><h3>".$dale[0]."</li> </h3>";
+           echo "<li><h3> Precio: ".$dule[0]." </li> </h3>";
+
+    ?>   
+        <input type="Checkbox" name="cajita" value="1" class="botonciwi">
 
         <input type="submit" value="Añadir">
 
@@ -122,10 +124,30 @@
    ?>
        <ul class="peque2">
         <form action="sesion_carr.php" method="POST">   
-  <?php
+    <?php
             //Los obtengo
-           echo "<li><img src='img/b2.jpg' class='peque'> Nombre: ".$dale[0]." ........   Precio: ".$dule[0]." </li> "
-       ?>   
+           echo "<li><h3> <img src='img/b2.jpg' class='peque'> </li> </h3>";
+           echo "<li><h3>".$dale[1]."</li> </h3>";
+           echo "<li><h3> Precio: ".$dule[1]." </li> </h3>";
+
+    ?>   
+       <input type="Checkbox" name="cajita" value="2" class="botonciwi">
+
+        <input type="submit" value="Añadir">
+        </form>
+       </ul>
+
+
+
+       <ul class="peque2">
+        <form action="sesion_carr.php" method="POST">   
+    <?php
+            //Los obtengo
+           echo "<li><h3> <img src='img/b3.jpg' class='peque'> </li> </h3>";
+           echo "<li><h3>".$dale[2]."</li> </h3>";
+           echo "<li><h3> Precio: ".$dule[2]." </li> </h3>";
+
+    ?>   
        <input type="Checkbox" name="cajita" value="2" class="botonciwi">
 
         <input type="submit" value="Añadir">
