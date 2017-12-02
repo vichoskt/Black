@@ -112,10 +112,9 @@
            echo "<li><h3> Precio: ".$dule[0]." </li> </h3>";
 
     ?>   
-        <input type="Checkbox" name="cajita" value="1" class="botonciwi">
 
         <input type="submit" value="Añadir" class="botonsito">
-
+        <input type="hidden" name="cajita" value="1">
 
         </form>
        </ul>
@@ -131,7 +130,7 @@
            echo "<li><h3> Precio: ".$dule[1]." </li> </h3>";
 
     ?>   
-       <input type="Checkbox" name="cajita" value="2" class="botonciwi">
+       <input type="hidden" name="cajita" value="2">
 
         <input type="submit" value="Añadir" class="botonsito">
         </form>
@@ -151,7 +150,7 @@
            echo "<li><h3> Precio: ".$dule[2]." </li> </h3>";
 
     ?>   
-       <input type="Checkbox" name="cajita" value="3" class="botonciwi">
+       <input type="hidden" name="cajita" value="3">
 
         <input type="submit" value="Añadir" class="botonsito">
         </form>
@@ -169,7 +168,7 @@
            echo "<li><h3> Precio: ".$dule[3]." </li> </h3>";
 
     ?>   
-       <input type="Checkbox" name="cajita" value="4" class="botonciwi">
+       <input type="hidden" name="cajita" value="4">
 
         <input type="submit" value="Añadir" class="botonsito">
         </form>
@@ -187,7 +186,7 @@
            echo "<li><h3> Precio: ".$dule[4]." </li> </h3>";
 
     ?>   
-       <input type="Checkbox" name="cajita" value="5" class="botonciwi">
+       <input type="hidden" name="cajita" value="5">
 
         <input type="submit" value="Añadir" class="botonsito">
         </form>
@@ -206,7 +205,7 @@
            echo "<li><h3> Precio: ".$dule[5]." </li> </h3>";
 
     ?>   
-       <input type="Checkbox" name="cajita" value="6" class="botonciwi">
+       <input type="hidden" name="cajita" value="6">
 
         <input type="submit" value="Añadir" class="botonsito">
         </form>
@@ -225,7 +224,7 @@
            echo "<li><h3> Precio: ".$dule[6]." </li> </h3>";
 
     ?>   
-       <input type="Checkbox" name="cajita" value="7" class="botonciwi">
+       <input type="hidden" name="cajita" value="7">
 
         <input type="submit" value="Añadir" class="botonsito">
         </form>
@@ -243,7 +242,7 @@
            echo "<li><h3> Precio: ".$dule[7]." </li> </h3>";
 
     ?>   
-       <input type="Checkbox" name="cajita" value="8" class="botonciwi">
+       <input type="hidden" name="cajita" value="8">
 
         <input type="submit" value="Añadir" class="botonsito">
         </form>

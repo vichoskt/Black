@@ -19,7 +19,7 @@
         <div class="barra_arriba">
             <p>Teléfono: +56982806956 | E-Mail: contactoBlack@black.cl</p>
             <ul>
-                <li class="ultimo"><a href="sesion_carr2.php">¡Carrito!</a></li>           
+                <li class="ultimo"><a href="Administracion.php">Administracion</a></li>           
             </ul>
             <ul id="marginsito2">
                 <li><a href="cerrar_session.php">Cerrar Sesión</a></li>
@@ -27,7 +27,7 @@
             <?php
 
             echo "<ul id='marginsito'>";
-             echo  "<li><a href='perfil.php'>".$nomb."</a></li>";
+             echo  "<li><a href='Administracion.php'>".$nomb."</a></li>";
             echo "</ul>";
      ?>
             
@@ -41,10 +41,10 @@
             </div>
             <div id="menu">
                 <ul>
-                    <li><a href="sesion_ind2.php" >Inicio</a></li>
-                    <li><a href="sesion_nos2.php" class="activo">Nosotros</a></li>
-                    <li><a href="sesion_gale2.php">Galeria</a></li>
-                    <li><a href="sesion_con2.php">Contacto</a></li>
+                    <li><a href="indexAdministrador.php" >Inicio</a></li>
+                    <li><a href="nosotrosAdmin.php" class="activo">Nosotros</a></li>
+                    <li><a href="galeriaAdmin.php">Galeria</a></li>
+                    <li><a href="contactoAdmin.php">Contacto</a></li>
                 </ul>
             </div>
 		</div>

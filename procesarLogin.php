@@ -23,7 +23,12 @@ $result = mysqli_query($conn, $query);
 
 
 if (mysqli_num_rows($result) > 0) {
-    // output data of each row
+
+    if ($rut == "admin" && $password == "admin") {
+        echo "<script>alert('Bienvenido: Admninistrador');</script>";
+        echo "<script>window.location = 'indexAdministrador.php';</script>";
+    }
+
     while($row = mysqli_fetch_assoc($result)) {
         
         echo "<script>alert('Bienvenido: ".$row["nombre_us"]."');</script>";
@@ -31,8 +36,7 @@ if (mysqli_num_rows($result) > 0) {
     	$_SESSION["nombrex"] = $row["nombre_us"];
     	$_SESSION["apellidox"] = $row["apellido"];
     	$_SESSION["rutx"] = $row["rut"];
-    	$_SESSION["passx"] = $row["password"];
-        
+    	$_SESSION["passx"] = $row["password"];  
     }
     
 } else {

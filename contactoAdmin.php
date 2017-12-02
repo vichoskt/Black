@@ -9,29 +9,31 @@
     <title>Document</title>
 </head>
 <body>
-       <?php
+    <?php
     session_start();
     $nomb = $_SESSION["nombrex"]
 
     ?>
 
+
     <div class="columna1">
         <div class="barra_arriba">
             <p>Teléfono: +56982806956 | E-Mail: contactoBlack@black.cl</p>
             <ul>
-                <li class="ultimo"><a href="sesion_carr2.php">¡Carrito!</a></li>           
+                <li class="ultimo"><a href="Administracion.php">Administracion</a></li> 
             </ul>
+          
             <ul id="marginsito2">
                 <li><a href="cerrar_session.php">Cerrar Sesión</a></li>
             </ul>
-            <?php
+             <?php
 
             echo "<ul id='marginsito'>";
-             echo  "<li><a href='perfil.php'>".$nomb."</a></li>";
+             echo  "<li><a href='Administracion.php'>".$nomb."</a></li>";
             echo "</ul>";
      ?>
-            
-                </div>
+
+        </div>
     </div>
     <div class="columna2">
         <div id="cabezera">
@@ -39,33 +41,65 @@
                 <h1>B L A C K</h1>
                 <p>Diseños Juveniles</p>
             </div>
-            <div id="menu">
-                <ul>
-                    <li><a href="sesion_ind2.php" >Inicio</a></li>
-                    <li><a href="sesion_nos2.php" class="activo">Nosotros</a></li>
-                    <li><a href="sesion_gale2.php">Galeria</a></li>
-                    <li><a href="sesion_con2.php">Contacto</a></li>
-                </ul>
-            </div>
-		</div>
-    </div>
-    <div class="contenedor_max_nosotros">
-        <div class="contenedor_nosotros">
-            <div class="foto_nosotros" id="cambio_foto"></div>
-            <div class="contenedor_der_nosotros">
-                <h2>Quienes somos</h2>
-                <p class="estiloP2">Black una marca de poleras independiente, que esta enfocada principalmente el publico juvenil, haciendo diseños de interes y tendencia popular para jóvenes. A nosotros como marca nos gusta dar la mejor atencióna nuestros clientes por ello ya contamos con mas de 200 compradores fieles a nuestra marca, y se espera que esta cifra siga subiendo en el futuro para empezar a extendernos nacionalmente. Hace ya 2 años que entramos al mercado de las poleras para seguir proximamente con polerones.</p>
-                </div>
-                <p class="estiloP1"></p>
-                <p class="estiloP2">Black esta inspirado en tendencias al estilo Skater, dado que a estos deportistas tienen una temática de libertad sobre su patienta esta representado en los diseños floreados, representando en grado la libertad que se puede obtener el estar arriba de una tabla. También asi los distintos deportes que provoquen una sensación de frescura y alegria ya sea como lo es el Fútbol, Surf, Snowboard, etc.</p>
 
-                <p class="estiloP3">
-                    LOCALIZACIÓN
-                </p>
-                <p class="estiloP3">La sucursal física está situada en Independencia, en la calle San luis, Pasaje 1491, casa 18</p>
-                <p class="estiloP3">El teléfono de la sucursal es el siguiente: +569 82806956</p>
+            <div id="menu">
+                    <ul>
+                          <li><a href="indexAdministrador.php">Inicio</a></li>
+                          <li><a href="nosotrosAdmin.php">Nosotros</a></li>
+                          <li><a href="galeriaAdmin.php">Galeria</a></li>
+                          <li><a href="contactoAdmin.php" class="activo">Contacto</a></li>
+                        </ul>
+                      </div>
 
         </div>
+
+    </div>
+    <div class="contenedor_contacto">
+        <form action="#" method="POST">
+            <table>
+                <tr>
+                    <td><input type="text" value placeholder="*Primer Nombre" maxlength="50" class="texto_contacto"></td>
+                    <td><input type="text" value placeholder="*Segundo Nombre" maxlength="50" class="texto_contacto"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" value placeholder="*Correo electrónico" maxlength="70" class="texto_contacto"></td>
+                    <td><select name="paises" id="pais" class="texto_contacto">
+                            <option selected value="1">Chile</option>
+                            <option value="2">Argentina</option>
+                            <option value="3">Perú</option>
+                            <option value="4">Brasil</option>
+                            <option value="5">Bolivia</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" value placeholder="*Ciudad" maxlength="50" class="texto_contacto"></td>
+                    <td><input type="text" value placeholder="*Numero de telefono" maxlength="20" class="texto_contacto"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" value placeholder="*Mensaje" maxlength="500" class="texto_mensaje"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Enviar" id="boton_enviar"></td>
+                </tr>
+
+            </table>
+        </form>
+
+        <div id="ubicacion" class="float_right">
+            <p>Celular: +56982806956
+               Telefono fijo: 22 7379445
+           </p>
+        </div>
+
+            <h2>Otros medios de contacto</h2>
+            <div class="contenedor_iconos">
+                <a href="https://www.facebook.com/black.ropa/"><div id="icono_fb" class="iconos"></div></a>
+                <a href="https://www.instagram.com/vichoskt/"> <div id="icono_insta" class="iconos"></div></a>
+                <div id="icono_twitter" class="iconos"></div>
+                <a href="https://www.youtube.com/user/tamiiistar"><div id="icono_youtube" class="iconos"></div></a>
+            </div>
     </div>
     <div class="columna5">
         <div id="contenedor_abajo_abajo">

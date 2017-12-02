@@ -1250,3 +1250,17 @@ h1 {
    border: 1px solid #00096A;
 }
 
+.pedidos {
+   height:500;
+   width:960px;
+   margin: auto;
+   padding-left: 30px;
+   padding-top: 30px;
+   margin-bottom: 50px;
+   margin-top: 100px;
+   box-shadow: 10px 10px 5px #888888;
+   border-radius: 10px 10px 10px 10px;
+   border: 1px solid #00096A;
+}
+
+

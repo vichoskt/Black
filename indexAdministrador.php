@@ -7,31 +7,42 @@
     <link rel="stylesheet" href="css/estilo.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <title>Document</title>
+    <script>
+    function errorS(){
+        alert("La sesion ah caducado");
+        window.location = "index.html"
+
+    }
+    </script>
+
 </head>
 <body>
+
        <?php
     session_start();
     $nomb = $_SESSION["nombrex"]
 
     ?>
 
+
     <div class="columna1">
         <div class="barra_arriba">
             <p>Teléfono: +56982806956 | E-Mail: contactoBlack@black.cl</p>
             <ul>
-                <li class="ultimo"><a href="sesion_carr2.php">¡Carrito!</a></li>           
+                <li class="ultimo"><a href="Administracion.php">Administracion</a></li>
             </ul>
+          
             <ul id="marginsito2">
                 <li><a href="cerrar_session.php">Cerrar Sesión</a></li>
             </ul>
-            <?php
+             <?php
 
             echo "<ul id='marginsito'>";
-             echo  "<li><a href='perfil.php'>".$nomb."</a></li>";
+             echo  "<li><a href='Administracion.php'>".$nomb."</a></li>";
             echo "</ul>";
      ?>
-            
-                </div>
+
+        </div>
     </div>
     <div class="columna2">
         <div id="cabezera">
@@ -39,33 +50,62 @@
                 <h1>B L A C K</h1>
                 <p>Diseños Juveniles</p>
             </div>
-            <div id="menu">
-                <ul>
-                    <li><a href="sesion_ind2.php" >Inicio</a></li>
-                    <li><a href="sesion_nos2.php" class="activo">Nosotros</a></li>
-                    <li><a href="sesion_gale2.php">Galeria</a></li>
-                    <li><a href="sesion_con2.php">Contacto</a></li>
-                </ul>
-            </div>
-		</div>
-    </div>
-    <div class="contenedor_max_nosotros">
-        <div class="contenedor_nosotros">
-            <div class="foto_nosotros" id="cambio_foto"></div>
-            <div class="contenedor_der_nosotros">
-                <h2>Quienes somos</h2>
-                <p class="estiloP2">Black una marca de poleras independiente, que esta enfocada principalmente el publico juvenil, haciendo diseños de interes y tendencia popular para jóvenes. A nosotros como marca nos gusta dar la mejor atencióna nuestros clientes por ello ya contamos con mas de 200 compradores fieles a nuestra marca, y se espera que esta cifra siga subiendo en el futuro para empezar a extendernos nacionalmente. Hace ya 2 años que entramos al mercado de las poleras para seguir proximamente con polerones.</p>
-                </div>
-                <p class="estiloP1"></p>
-                <p class="estiloP2">Black esta inspirado en tendencias al estilo Skater, dado que a estos deportistas tienen una temática de libertad sobre su patienta esta representado en los diseños floreados, representando en grado la libertad que se puede obtener el estar arriba de una tabla. También asi los distintos deportes que provoquen una sensación de frescura y alegria ya sea como lo es el Fútbol, Surf, Snowboard, etc.</p>
 
-                <p class="estiloP3">
-                    LOCALIZACIÓN
-                </p>
-                <p class="estiloP3">La sucursal física está situada en Independencia, en la calle San luis, Pasaje 1491, casa 18</p>
-                <p class="estiloP3">El teléfono de la sucursal es el siguiente: +569 82806956</p>
+            <div id="menu">
+                    <ul>
+                          <li><a href="indexAdministrador.php" class="activo">Inicio</a></li>
+                          <li><a href="nosotrosAdmin.php">Nosotros</a></li>
+                          <li><a href="galeriaAdmin.php">Galeria</a></li>
+                          <li><a href="contactoAdmin.php">Contacto</a></li>
+                        </ul>
+                      </div>
 
         </div>
+
+    </div>
+    <div class="columna3">
+        <ul>
+            <li><div id="img1" class="img_portada circle"></div>
+                <a href="sesion_verpro2.php" class="enlace">Floreado Black</a>
+            </li>
+            <li id="white"><div id="img2" class="img_portada"></div>
+                <a href="sesion_verpro2.php" class="enlace">Floreado White</a>
+            </li>
+            <li id="primaveral"><div id="img3" class="img_portada"></div>
+                <a href="sesion_verpro2.php" class="enlace">Floreado Primaveral</a>
+            </li>
+            <li id="bluex"><div id="img4" class="img_portada"></div>
+                <a href="sesion_verpro2.php" class="enlace">Floreado Blue</a>
+            </li>
+        </ul>
+    </div>
+    <div class="columna4">
+            <hr>
+                
+        <div id="contenedor_abajo_iz">
+            <h2>Bienvenidos a Black Ropa</h2>
+            <hr>
+            <strong>Black ropa</strong>
+            <div id="img_logo"></div>
+            <p class="justificado">Diseños juveniles que estan marcando tendencia, black busca que sus compradores puedan sentirse mas seguros con una nueva e inovadora tenida primaveral. Se busca seguir con nuevos diseños</p>
+            <a href="#">Leer mas...</a>
+            <p class="justificado">La gente busca diseños innvoadores, algo nuevo en sus vidas y Black ha estado consiguiendo mucho con sus estilos originales </p>
+            <a href="#">Leer mas...</a>
+            <p class="justificado">La nueva moda se esta haciendo presente, por lo cual se busca seguir con diseños exclusivos para jovenes que buscan algo distinto con un toque de frescura </p>
+            <a href="#">Leer mas...</a>
+            <p class="justificado">La gente esta dejando de lado sus antiguas prendas para empezar a cambiar el closet, Black esta dando muchos caminos a gente indecisa que no sabe que adquirir esta temporada</p>
+        </div>
+
+        <div class="contenedor_abajo_de">
+            <h2>Entrevistas Black</h2>
+            <hr>
+            <div id="img_referencia"></div>
+            <strong>Referencias</strong>
+            <p class="justificado">Aqui algunas opniones de nuestros compradores de poleras Black, te invitamos a que conozcas las distintas opiniones y puntuaciones de gente que ha comprado nuestros diseños </p>
+            <a href="#">Leer mas...</a>
+            <hr>
+        </div>
+
     </div>
     <div class="columna5">
         <div id="contenedor_abajo_abajo">
@@ -124,5 +164,6 @@
         </div>
 
     </div>
+
 </body>
 </html>

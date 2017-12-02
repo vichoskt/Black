@@ -7,9 +7,20 @@
     <link rel="stylesheet" href="css/estilo.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider();
+    });
+    </script>
+
 </head>
 <body>
-       <?php
+    <?php
     session_start();
     $nomb = $_SESSION["nombrex"]
 
@@ -19,54 +30,78 @@
         <div class="barra_arriba">
             <p>Teléfono: +56982806956 | E-Mail: contactoBlack@black.cl</p>
             <ul>
-                <li class="ultimo"><a href="sesion_carr2.php">¡Carrito!</a></li>           
+                <li class="ultimo"><a href="Administracion.php">Administracion</a></li>            
             </ul>
             <ul id="marginsito2">
                 <li><a href="cerrar_session.php">Cerrar Sesión</a></li>
             </ul>
             <?php
 
-            echo "<ul id='marginsito'>";
-             echo  "<li><a href='perfil.php'>".$nomb."</a></li>";
-            echo "</ul>";
-     ?>
+                echo "<ul id='marginsito'>";
+                echo  "<li><a href='Administracion.php'>".$nomb."</a></li>";
+                echo "</ul>";
+
+            ?>
             
-                </div>
+        </div>
     </div>
     <div class="columna2">
         <div id="cabezera">
+
+
+
             <div id="logo">
                 <h1>B L A C K</h1>
                 <p>Diseños Juveniles</p>
             </div>
-            <div id="menu">
-                <ul>
-                    <li><a href="sesion_ind2.php" >Inicio</a></li>
-                    <li><a href="sesion_nos2.php" class="activo">Nosotros</a></li>
-                    <li><a href="sesion_gale2.php">Galeria</a></li>
-                    <li><a href="sesion_con2.php">Contacto</a></li>
-                </ul>
-            </div>
-		</div>
-    </div>
-    <div class="contenedor_max_nosotros">
-        <div class="contenedor_nosotros">
-            <div class="foto_nosotros" id="cambio_foto"></div>
-            <div class="contenedor_der_nosotros">
-                <h2>Quienes somos</h2>
-                <p class="estiloP2">Black una marca de poleras independiente, que esta enfocada principalmente el publico juvenil, haciendo diseños de interes y tendencia popular para jóvenes. A nosotros como marca nos gusta dar la mejor atencióna nuestros clientes por ello ya contamos con mas de 200 compradores fieles a nuestra marca, y se espera que esta cifra siga subiendo en el futuro para empezar a extendernos nacionalmente. Hace ya 2 años que entramos al mercado de las poleras para seguir proximamente con polerones.</p>
-                </div>
-                <p class="estiloP1"></p>
-                <p class="estiloP2">Black esta inspirado en tendencias al estilo Skater, dado que a estos deportistas tienen una temática de libertad sobre su patienta esta representado en los diseños floreados, representando en grado la libertad que se puede obtener el estar arriba de una tabla. También asi los distintos deportes que provoquen una sensación de frescura y alegria ya sea como lo es el Fútbol, Surf, Snowboard, etc.</p>
 
-                <p class="estiloP3">
-                    LOCALIZACIÓN
-                </p>
-                <p class="estiloP3">La sucursal física está situada en Independencia, en la calle San luis, Pasaje 1491, casa 18</p>
-                <p class="estiloP3">El teléfono de la sucursal es el siguiente: +569 82806956</p>
+            <div id="menu">
+                    <ul>
+                          <li><a href="indexAdministrador.php">Inicio</a></li>
+                          <li><a href="nosotrosAdmin.php">Nosotros</a></li>
+                          <li><a href="galeriaAdmin.php" class="activo">Galeria</a></li>
+                          <li><a href="contactoAdmin.php">Contacto</a></li>
+                    </ul>
+            </div>
 
         </div>
+
     </div>
+	<div class="contenedor_galeria">
+		    <div class="columna3">
+       <div class="slider">
+                <ul>
+                <li> <a href="sesion_verpro2.php" > <div id="b1" class="img_slider esconder"> </div> </a></li>
+                </ul>
+                <ul>
+                <li> <a href="sesion_verpro2.php" > <div id="b2" class="img_slider"> </div> </a></li>
+                </ul>
+                <ul>
+                 <li> <a href="sesion_verpro2.php" > <div id="b3" class="img_slider"> </div> </a></li>
+                </ul>
+                <ul>
+             <li> <a href="sesion_verpro2.php" > <div id="b4" class="img_slider"> </div> </a></li>
+            </ul>
+            <ul>
+               <li> <a href="sesion_verpro2.php" > <div id="b5" class="img_slider"> </div> </a></li>
+            </ul> 
+            <ul>
+                <li> <a href="sesion_verpro2.php" > <div id="b6" class="img_slider"> </div> </a></li>
+            </ul>
+            <ul>
+                 <li> <a href="sesion_verpro2.php" > <div id="b7" class="img_slider"> </div> </a></li>
+            </ul>    
+            <ul>
+               <li> <a href="sesion_verpro2.php" > <div id="b8" class="img_slider"> </div> </a></li>
+            </ul>
+            <ul>
+                <li> <a href="sesion_verpro2.php" > <div id="b9" class="img_slider"> </div> </a></li>
+            </ul>
+
+            </div>
+    </div>
+
+	</div>
     <div class="columna5">
         <div id="contenedor_abajo_abajo">
             <div id="leftbox">

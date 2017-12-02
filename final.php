@@ -90,7 +90,9 @@
             $query = "insert into venta values ('".$id."','".$run."','".$medi."',".$valor.")";
 
             if (mysqli_query($conn, $query)) {
-            echo "<h1> GRACIAS por su compra, Su Pedido llegará en 3 o 5 Días </h1>";
+            echo "<div class='pedidos'>";
+            echo "<h1> Gracias por su compra, su pedido llegará en 3 o 5 Días </h1>";
+            echo "</div>";
 
             }
             else{

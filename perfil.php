@@ -20,7 +20,7 @@
         <div class="barra_arriba">
             <p>Teléfono: +56982806956 | E-Mail: contactoBlack@black.cl</p>
             <ul>
-                <li class="ultimo"><a href="#">Cotizar</a></li>
+                <li class="ultimo"><a href="sesion_carr2.php">¡Carrito!</a></li>
             </ul>
           
             <ul id="marginsito2">
