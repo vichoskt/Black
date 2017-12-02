@@ -87,7 +87,7 @@
                 die("Connection failed: " . mysqli_connect_error());
             }
 
-            $query = "insert into venta values (".$id.",'".$run."','".$medi."','".$valor."'')";
+            $query = "insert into venta values ('".$id."','".$run."','".$medi."',".$valor.")";
 
             if (mysqli_query($conn, $query)) {
             echo "<h1> GRACIAS por su compra, Su Pedido llegará en 3 o 5 Días </h1>";
