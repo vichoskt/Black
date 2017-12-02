@@ -1264,3 +1264,23 @@ h1 {
 }
 
 
+.botoness {
+   font-size:12px;
+   height:500px;
+   width:500px;
+   margin: auto;
+   border: 1px solid red;
+}
+
+.botonsotes{
+    height: 100px;
+    width: 300px;
+}
+
+.verUsers {
+   font-size:12px;
+   height:500px;
+   width:500px;
+   margin: auto;
+   border: 1px solid red;
+}

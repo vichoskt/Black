@@ -1,4 +1,3 @@
-
 <?php
 
     $servername = "localhost";
@@ -15,29 +14,31 @@
         $abc2 = $_SESSION["rutx"];
         $abc3 = null;
 
-     if (isset($_SESSION["pro"])) {
-         # code...
-      $abc1 = $_SESSION["pro"];
-    
-    // Create connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
+if (isset($_SESSION["pro"])) {
+             # code...
+        $abc1 = $_SESSION["pro"];
+        
+        // Create connection
+        $conn = new mysqli($servername, $username, $password, $dbname);
 
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    } 
+        // Check connection
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        } 
 
-    $query = "insert into carrito values (  '".$abc3."' ,'".$abc2."', ".$abc1.")";
+        $query = "insert into carrito values (  '".$abc3."' ,'".$abc2."', ".$abc1.")";
 
-if (mysqli_query($conn, $query)) {
+    if (mysqli_query($conn, $query)) {
 
-    echo "<script>alert('Registrado correctamente');</script>";
-  
-}    else {
-        echo "0 results";
-    }
-    $conn->close();
-    unset($_SESSION["pro"]);
+        echo "<script>alert('Registrado correctamente');</script>";
+      
+        }else {
+            echo "0 results";
+        }
+
+        $conn->close();
+        unset($_SESSION["pro"]);
+
 }
 
 ?>
@@ -141,11 +142,6 @@ if (mysqli_query($conn, $query)) {
 
 
 ?>
-
-
-
-
-
 
 
 
@@ -290,9 +286,4 @@ $exter= $exter + $dele[$i];
 
 </body>
 </html>
-
-
-
-
-
 
