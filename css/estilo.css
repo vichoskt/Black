@@ -1266,21 +1266,54 @@ h1 {
 
 .botoness {
    font-size:12px;
-   height:500px;
-   width:500px;
+   height:400px;
+   width:600px;
    margin: auto;
    border: 1px solid red;
+   margin-top: -280px;
+   padding-top: 100px;
+   padding-left: 80px;
+   margin-bottom: 70px;
+   border-style: none;
+   box-shadow: 10px 10px 5px #888888;
+   border-radius: 10px 10px 10px 10px;
+   background-color: #FFD7AE;
 }
 
 .botonsotes{
     height: 100px;
     width: 300px;
+    background-color: #077DB4;
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 30px;
+    font-size: 30px;
+    margin-left: 90px;
+    font-style: italic;
+
 }
 
 .verUsers {
    font-size:12px;
-   height:500px;
-   width:500px;
+   height:400px;
+   width:600px;
    margin: auto;
-   border: 1px solid red;
+   margin-top: -300px;
+   padding-top: 100px;
+   padding-left: 50px;
+   margin-bottom: 20px;
+   background-color: #D8FEE6;
+   border-style: dotted;
+   border-color: #A3FB9B;
+   border-radius: 10px 10px 10px 10px;
+}
+
+.tablilla{
+    border-style: groove;
+    margin-left: 90px;
+    border: none;
+    border-spacing: 5px;
+    border-color: white;
+    font-size: 14px;
+    font-style: italic;
 }

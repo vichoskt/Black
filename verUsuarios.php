@@ -113,12 +113,15 @@
 
 
         <?php
-        echo "<table border='2'>";
+
+        $cantidad = count($ruts);
+
+        echo "<table border='2' class='tablilla'>";
         echo "<tr><td><h4>Rut</h4></td>";
         echo "<td><h4>Nombre</h4></td>";
         echo "<td><h4>Apellido</h4></td>";
         echo "<td><h4>Password</h4></td></tr>";
-        for ($i=0; $i < 5 ; $i++) { 
+        for ($i=0; $i < $cantidad ; $i++) { 
             echo "<tr><td> ".$ruts[$i]." </td>";
             echo "<td> ".$nombress[$i]." </td>";
             echo "<td> ".$apellidoss[$i]." </td>";

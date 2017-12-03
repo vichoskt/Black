@@ -87,7 +87,7 @@
             die("Connection failed: " . mysqli_connect_error());
         }
 
-        $query = "select * FROM ventas";
+        $query = "select * FROM venta";
 
         $result = mysqli_query($conn, $query);
 
@@ -113,11 +113,14 @@
 
 
         <?php
-        echo "<table border='2'>";
-        echo "<tr><td><h4>Rut</h4></td>";
-        echo "<td><h4>Nombre</h4></td>";
-        echo "<td><h4>Apellido</h4></td>";
-        echo "<td><h4>Password</h4></td></tr>";
+
+        $canti = count($ids);
+
+        echo "<table border='2' class='tablilla'>";
+        echo "<tr><td><h4>ID venta</h4></td>";
+        echo "<td><h4>Rut usuario</h4></td>";
+        echo "<td><h4>ID medio de pago</h4></td>";
+        echo "<td><h4>Valor</h4></td></tr>";
         for ($i=0; $i < 5 ; $i++) { 
             echo "<tr><td> ".$ids[$i]." </td>";
             echo "<td> ".$userRut[$i]." </td>";
