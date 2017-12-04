@@ -1261,6 +1261,8 @@ h1 {
    box-shadow: 10px 10px 5px #888888;
    border-radius: 10px 10px 10px 10px;
    border: 1px solid #00096A;
+   background-image: url(../img/colour.jpg) !important;
+   background-size: 100% 100%;
 }
 
 

@@ -28,7 +28,7 @@
                 <li class="ultimo"><a href="sesion_carr2.php">¡Carrito!</a></li>            
             </ul>
             <ul id="marginsito2">
-                <li><a href="cerrar_session.php">Cerrar session</a></li>
+                <li><a href="cerrar_session.php">Cerrar Sesión</a></li>
             </ul>
             <?php
 

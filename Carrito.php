@@ -32,8 +32,9 @@ if (isset($_SESSION["pro"])) {
 
         echo "<script>alert('Registrado correctamente');</script>";
       
-        }else {
-            echo "0 results";
+        }
+        else{
+            echo "0 Results";
         }
 
         $conn->close();
@@ -42,8 +43,6 @@ if (isset($_SESSION["pro"])) {
 }
 
 ?>
-
-
 
 
 
@@ -91,9 +90,7 @@ if (isset($_SESSION["pro"])) {
         }
 
     } 
-    else {
-        echo "0 results";
-    }
+    
     $conn->close();
 
 ?>
@@ -156,10 +153,10 @@ if (isset($_SESSION["pro"])) {
         <div class="barra_arriba">
             <p>Teléfono: +56982806956 | E-Mail: contactoBlack@black.cl</p>
             <ul>
-                <li class="ultimo"><a href="Productos.php">¡Carrito!</a></li>           
+                <li class="ultimo"><a href="Carrito.php">¡Carrito!</a></li>           
             </ul>
             <ul id="marginsito2">
-                <li><a href="cerrar_session.php">Cerrar session</a></li>
+                <li><a href="cerrar_session.php">Cerrar Sesión</a></li>
             </ul>
             <?php
 

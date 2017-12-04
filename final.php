@@ -29,7 +29,7 @@
                 <li class="ultimo"><a href="sesion_carr2.php">¡Carrito!</a></li>            
             </ul>
             <ul id="marginsito2">
-                <li><a href="cerrar_session.php">Cerrar session</a></li>
+                <li><a href="cerrar_session.php">Cerrar Sesión</a></li>
             </ul>
             <?php
 
@@ -91,7 +91,7 @@
 
             if (mysqli_query($conn, $query)) {
             echo "<div class='pedidos'>";
-            echo "<h1> Gracias por su compra, su pedido llegará en 3 o 5 Días </h1>";
+            echo "<h1> Gracias por su compra, llegará en 48h Máx.</h1>";
             echo "</div>";
 
             }
